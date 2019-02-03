@@ -11,14 +11,20 @@ int diff (int a, int b)
 
 int factorial(int n)
 {
+     //recursive function to generate the factorial
+     //of a number
+      if(n==0) return 1;
+      return n*fact(n-1);
 }
 
 int remainder(int a, int b)
 {
+         return a%b;
 }
 
 int quotient(int a, int b)
 {
+         return a/b;
 }
 
 
