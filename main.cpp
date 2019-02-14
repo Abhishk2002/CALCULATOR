@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include <math.h>
 int sum(int a, int b)
 {
 return a+b;
@@ -11,10 +11,14 @@ int diff (int a, int b)
 
 int factorial(int n)
 {
-     //recursive function to generate the factorial
-     //of a number
-      if(n==0) return 1;
-      return n*fact(n-1);
+     //using loops to generate factorial
+     int fact = 1;
+     while(n)
+     {
+     	fact = fact*n;
+     	n--;
+	 }
+	 return fact;
 }
 
 int remainder(int a, int b)
@@ -27,9 +31,14 @@ int quotient(int a, int b)
          return a/b;
 }
 
+int power(int a, int b)
+{
+	return pow(a,b);
+}
 
 int main()
 {
-             scanf("%d %d",&a,&b);
+            int a,b;
+			 scanf("%d %d",&a,&b);
              printf("%d",sum(a,b));
 }
