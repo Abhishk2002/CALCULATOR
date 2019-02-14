@@ -2,15 +2,18 @@
 #include <math.h>
 int sum(int a, int b)
 {
+  //calculating sum
 return a+b;
 }
 int diff (int a, int b)
 {
+  //calculating difference
   return a-b;
 }
 
 int factorial(int n)
 {
+
      //using loops to generate factorial
      int fact = 1;
      while(n)
@@ -19,10 +22,12 @@ int factorial(int n)
      	n--;
 	 }
 	 return fact;
+
 }
 
 int remainder(int a, int b)
 {
+       //calculating remainder
          return a%b;
 }
 
