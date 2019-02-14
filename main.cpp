@@ -2,10 +2,12 @@
 
 int sum(int a, int b)
 {
+  //calculating sum
 return a+b;
 }
 int diff (int a, int b)
 {
+  //calculating difference
   return a-b;
 }
 
@@ -14,11 +16,13 @@ int factorial(int n)
      //recursive function to generate the factorial
      //of a number
       if(n==0) return 1;
+     //using recursive definition
       return n*fact(n-1);
 }
 
 int remainder(int a, int b)
 {
+       //calculating remainder
          return a%b;
 }
 
