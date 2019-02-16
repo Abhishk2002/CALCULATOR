@@ -2,13 +2,14 @@
 #include <math.h>
 int sum(int a, int b)
 {
-  //calculating sum
+  //calculating the addition of the numbers
 return a+b;
 }
 int diff (int a, int b)
 {
   //calculating difference
   return a-b;
+  //returning the difference
 }
 
 int factorial(int n)
@@ -22,6 +23,11 @@ int factorial(int n)
      	n--;
 	 }
 	 return fact;
+	 //returning the value
+	 /*
+             if(n==1 || n==0) return 1;
+             else return fact(n-1)*n; 
+	 */
 
 }
 
@@ -29,10 +35,11 @@ int remainder(int a, int b)
 {
        //calculating remainder
          return a%b;
-}
+} //calculating quotient
 
 int quotient(int a, int b)
 {
+	    if(b==0) return -1; //not possible
          return a/b;
 }
 
@@ -43,7 +50,8 @@ int power(int a, int b)
 
 int main()
 {
-            int a,b;
+             int a,b;
 			 scanf("%d %d",&a,&b);
+			      printf("%d",diff(a,b));
              printf("%d",sum(a,b));
 }
