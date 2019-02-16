@@ -38,9 +38,11 @@ int remainder(int a, int b)
 } //calculating quotient
 
 int quotient(int a, int b)
+
 {
 	    if(b==0) return -1; //not possible
          return a/b;
+
 }
 
 int power(int a, int b)
@@ -54,4 +56,7 @@ int main()
 			 scanf("%d %d",&a,&b);
 			      printf("%d",diff(a,b));
              printf("%d",sum(a,b));
+	     printf("%d",diff(a,b));
+	printf("%d",power(a,b));
+	     
 }
